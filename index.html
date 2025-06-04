@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's The Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>What's The Weather</h1>
+            <p class="tagline">Your stylish weather companion</p>
+        </header>
+
+        <div class="search-container">
+            <form id="weather-form">
+                <div class="input-group">
+                    <input type="text" id="location-input" placeholder="Enter city name..." required>
+                    <button type="submit" id="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="weather-container" id="weather-container">
+            <!-- Weather content will be inserted here -->
+        </div>
+
+        <div class="loader" id="loader">
+            <div class="spinner"></div>
+        </div>
+
+        <div class="error-message" id="error-message">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Oops! We couldn't find that location. Please try again.</p>
+        </div>
+
+        <div class="forecast-container" id="forecast-container">
+            <!-- Forecast content will be inserted here -->
+        </div>
+
+        <footer>
+            <p>&copy; 2025 What's The Weather - <span id="current-year"></span></p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
